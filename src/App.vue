@@ -1,16 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <Navbar />
+  <CharacterList />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import CharacterList from "./components/CharacterList.vue";
+import Navbar from "./components/Navbar.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    HelloWorld,
+    CharacterList,
+    Navbar,
   },
 });
 </script>
@@ -22,6 +24,16 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
 }
 </style>
