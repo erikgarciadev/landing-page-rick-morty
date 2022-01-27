@@ -25,6 +25,8 @@ header {
   background: white;
   width: 100%;
   box-shadow: 0px 1px 10px #999;
+  position: sticky;
+  top: 0;
 }
 
 nav {

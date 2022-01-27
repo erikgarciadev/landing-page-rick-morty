@@ -36,4 +36,8 @@ export default defineComponent({
   margin: 0 auto;
   padding: 0 2em;
 }
+
+:root {
+  --shadow: 0px 1px 10px #999;
+}
 </style>

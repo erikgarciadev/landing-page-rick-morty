@@ -9,9 +9,11 @@ interface Info {
   prev: null | string;
 }
 
-export const getCharacters = async (): Promise<
+export const getCharacters = async (
+  page = 1
+): Promise<
   AxiosResponse<{
     info: Info;
     results: Character[];
   }>
-> => await axios.get("/character");
+> => await axios.get(`/character/?page=${page}`);
